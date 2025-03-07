@@ -1,0 +1,24 @@
+name: naver_map_plugin
+description: flutter naver map plugin support android and iOS. naver map service is limited to south korea which has high accuracy.
+version: 0.9.7
+repository: https://github.com/LBSTECH/naver_map_plugin.git
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: map.naver.plugin.net.lbstech.naver_map_plugin
+        pluginClass: NaverMapPlugin
+      ios:
+        pluginClass: NaverMapPlugin
